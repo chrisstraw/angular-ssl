@@ -17,8 +17,7 @@ NOTE -> Requirement: you must have OpenSSL installed. I do this through https://
 1. To generate the key and crt files, open a terminal in certs and run. Once they are generated, I commit these files to the repo
 
 ```
-openssl req -new -x509 -newkey rsa:2048 -sha256 -nodes -keyout localhost.key -days 3560 -out localhost.crt -config certificate.config
-
+openssl req -new -x509 -newkey 1rsa:2048 -sha256 -nodes -keyout localhost.key -days 3560 -out localhost.crt -config certificate.config
 ```
 
 2. change the server to include the ssl flag
